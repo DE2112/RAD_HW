@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspose.Cells" Version="22.6.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+        <HintPath>..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Frames\ProviderFrame.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Frames\MaterialFrame.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Frames\ProductFrame.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Frames\OutputReportsFrame.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Frames\OutputReportForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Frames\ProvidersReportForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="Frames\MaterialReportForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>
